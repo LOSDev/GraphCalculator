@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "GraphViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 							
@@ -41,6 +43,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)iPad
+{
+    
+	return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
 }
 
 @end
